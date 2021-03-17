@@ -160,7 +160,7 @@ Plug 'tpope/vim-surround'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'jiangmiao/auto-pairs'
-
+Plug 'kdheepak/lazygit.vim', { 'branch': 'nvim-v0.4.3' }
 
 
 call plug#end()
@@ -195,6 +195,14 @@ let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-overwin-f)
 
 
+" ===
+" === lazygit.nvim
+" ===
+noremap <c-g> :LazyGit<CR>
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window
+let g:lazygit_floating_window_scaling_factor = 1.0 " scaling factor for floating window
+let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_use_neovim_remote = 1 " for neovim-remote support
 
 
 
