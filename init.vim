@@ -96,7 +96,7 @@ set encoding=utf-8
 set guifont="JetBrains Mono":h14
 set exrc
 set secure
-set clipboard=unnamed
+set clipboard+=unnamedplus
 set number
 "set spell
 set relativenumber
@@ -165,6 +165,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'sainnhe/sonokai'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " ===
@@ -236,6 +237,11 @@ let g:lazygit_use_neovim_remote = 1 " for neovim-remote support
 " ===
 "
 let g:coc_global_extensions = [
+    \ 'coc-java-vimspector',
+    \ 'coc-java-lombok',
+    \ 'coc-java-debug',
+    \ 'coc-java',
+    \ 'coc-marketplace',
     \ 'coc-translator',
     \ 'coc-yank',
     \ 'coc-syntax',
